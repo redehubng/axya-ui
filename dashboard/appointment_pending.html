@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+
+        
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#tableSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                        <ul class="collapse list-unstyled" id="tableSubmenu">
+                            <li>
+                                <a href="appointment_pending.html">pending</a>
+                            </li>
+                            <li>
+                                <a href="appointment_upcoming.html">upcoming</a>
+                            </li>
+                            <li>
+                                <a href="appointment_past.html">past</a>
+                            </li>
+                            
+                    
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                
+                    <a class="nav-link" href="message.html">
+                        <i class="fa fa-comment"></i>
+                        <span class="navlink-active">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#uiElementSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="uiElementSubmenu">
+                        <!-- include the <li></li> for the sub menu -->
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Notification</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="medication.html">
+                        <i class="fa fa-prescription"></i>
+                        <span class="navlink-active">Medication</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+                
+                        <a class="navbar-brand" href="#">Dashboard</a>
+                
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+                
+                               
+                            </ul>
+                
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-info relative">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar">
+                                        Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+                
+                            </ul>
+                
+                
+                        </div>
+                    
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="#">Appointement</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pending</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+            
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                       
+                        <div class="box shadow">
+                            <div class="box-title">
+                                <h5>Appointment | pending</h5>
+                                <!-- <small class="text-muted">simple login form example</small> -->
+                            </div>
+                            <div class="box-content">
+                                <!-- START ROW -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="search-form">
+                                            <div class="row">
+                                                <div class="col-md-5 offset-md-7">
+
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="search">Search</label>
+                                                            <input type="search" class="form-control form-control-md rounded" id="search" placeholder="Keyword...">
+                                                        </div>
+                                                    </form>
+                                                
+                                                    <!-- <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Doctor</th>
+                                                        <th scope="col">category</th>
+                                                        <th scope="col">Date</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                        
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    <div class="media">
+                                                                        <img src="../images/doc.jpg" alt="Image" width="36" height="36" class="img-responsive img-circle">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11">
+                                                                    <div class="name pl-4">
+                                                                        <span>Alaba Mustapha</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </td>
+                                                        <td>pediatrician</td>
+                                                        <td>20 june, 2017 on 17:05</td>
+                                                        <td>
+                                                            <button class="btn btn-danger">cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    <div class="media">
+                                                                        <img src="../images/doc.jpg" alt="Image" width="36" height="36" class="img-responsive img-circle">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11">
+                                                                    <div class="name pl-4">
+                                                                        <span>Alaba Mustapha</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </td>
+                                                        <td>pediatrician</td>
+                                                        <td>20 june, 2017 on 17:05</td>
+                                                        <td>
+                                                            <button class="btn btn-danger">cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    <div class="media">
+                                                                        <img src="../images/doc.jpg" alt="Image" width="36" height="36" class="img-responsive img-circle">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11">
+                                                                    <div class="name pl-4">
+                                                                        <span>Alaba Mustapha</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </td>
+                                                        <td>pediatrician</td>
+                                                        <td>20 june, 2017 on 17:05</td>
+                                                        <td>
+                                                            <button class="btn btn-danger">cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    
+                                                        <td>
+                                                            <div class="row">
+                                                                <div class="col-1">
+                                                                    <div class="media">
+                                                                        <img src="../images/doc.jpg" alt="Image" width="36" height="36" class="img-responsive img-circle">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11">
+                                                                    <div class="name pl-4">
+                                                                        <span>Alaba Mustapha</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </td>
+                                                        <td>pediatrician</td>
+                                                        <td>20 june, 2017 on 17:05</td>
+                                                        <td>
+                                                            <button class="btn btn-danger">cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    
+                        
+                        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- END ROW -->
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js" ></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+        });
+    </script>
+</body>
+
+</html>

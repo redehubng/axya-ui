@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#appointmentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="appointmentSubmenu">
+                        <li>
+                            <a href="appointment_pending.html">pending</a>
+                        </li>
+                        <li>
+                            <a href="appointment_upcoming.html">upcoming</a>
+                        </li>
+                        <li>
+                            <a href="appointment_past.html">past</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="message.html">
+                        <i class="fa fa-comment"></i>
+                        <span class="navlink-active">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medication.html">
+                        <i class="fa fa-prescription"></i>
+                        <span class="navlink-active">Medication</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patients.html">
+                        <i class="fa fa-procedures"></i>
+                        <span class="navlink-active">Patients</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="paymentSubmenu">
+                        <li>
+                            <a href="payment-received.html">payment received</a>
+                        </li>
+                        <li>
+                            <a href="sub-payment.html">subscription payment</a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">earnings</a>
+                        </li>
+                    
+                    
+                    </ul>
+                   
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Notification</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fa fa-clipboard-list"></i>
+                        <span class="navlink-active">Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="subscription.html">
+                        <i class="fa fa-credit-card"></i>
+                        <span class="navlink-active">subscription</span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+
+                        <a class="navbar-brand" href="#">Dashboard</a>
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-info relative">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar"> Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">message</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                        <!-- message holder -->
+                        <div class="message">
+                            <div class="container rounded border">
+
+                                <div class="row">
+                                    <!-- conversation type -->
+                                    <div class="col-3 bg-white b-1 brb">
+                                        <div class="conversation-type relative">
+                                            <!-- dropdown conversation menu -->
+                                            <div class="dropdown type">
+                                                <a class="dropdown-toggle btn btn-link" href="#" id="dropdownI" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    All conversation (1)
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownI">
+                                                    <a class="dropdown-item" href="#">Action 1</a>
+                                                    <a class="dropdown-item" href="#">Action 2</a>
+                                                    <hr>
+                                                    <a class="dropdown-item" href="#">Log Out</a>
+                                                </div>
+                                            </div>
+                                            <!-- end -->
+                                            <!-- search form -->
+                                            <div class="search-form">
+                                                <span class="inline-block search-icon-button text-grey">
+                                                    <i class="fa fa-search fa-2x"></i>
+                                                </span>
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <input type="search" class="form-control rounded" id="search" placeholder="search.">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- end -->
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- chatting header -->
+                                    <div class="col-9 bg-white b-1 bb">
+                                        <div class="chatting-header">
+                                            <div class="name">
+                                                <i class="icon-circle online"></i>
+                                                <span>John Doe</span>
+                                            </div>
+                                            <span>last seen 5h ago </span>
+                                        </div>
+                                    </div>
+                                    <!-- end chatting header  -->
+
+                                </div>
+                                <div class="row">
+                                    <!-- conversation list -->
+                                    <div class="col-3 bg-white b-1 br p-0">
+                                        <div class="conversation-list scroll" style="height: 400px">
+                                            <ul class="nav flex-column">
+                                                <!-- list -->
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+                                                <li class="nav-item relative">
+                                                    <!-- avatar -->
+                                                    <img src="../images/doc.jpg" alt="" width="50" class="circle img-responsive conversation-avatar">
+                                                    <span class="icon-circle online status"></span>
+                                                    <!-- other chat info -->
+                                                    <div class="pre-chat">
+                                                        <span class="text-bold">Alaba Mustapha Olalekan </span>
+                                                        <br>
+                                                        <span class="text-grey">Lorem ipsum, dolor sit amet. </span>
+                                                    </div>
+                                                    <span class="last-seen badge badge-primary">3m</span>
+                                                </li>
+
+                                                <!-- end -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                    <!-- chatting box -->
+                                    <div class="col-6 bg-white b-1 br p-0" style="height: 400px;">
+                                        <div class="chatting-box">
+                                            <div class="chat-box mb-1 scroll">
+                                                <div class="message-row">
+                                                    <img src="../images/dija.jpg" alt="image" class="rounded-circle conversation-avatar" width="50" height="50">
+                                                    <div class="message">
+                                                        <!-- name of messenger -->
+                                                        <span class="name text-bold">Maris kike</span>&nbsp;
+                                                        <!-- message time -->
+                                                        <span class="text-grey">Nov, 9 | 12:45pm</span>
+
+                                                        <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod
+                                                            incidunt, sint atque aperiam.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-row ">
+                                                    <img src="../images/dija.jpg" alt="image" class="rounded-circle conversation-avatar" width="50" height="50">
+                                                    <div class="message">
+                                                        <!-- name of messenger -->
+                                                        <span class="name text-bold">Maris kike</span>&nbsp;
+                                                        <!-- message time -->
+                                                        <span class="text-grey">Nov, 9 | 12:45pm</span>
+
+                                                        <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod
+                                                            incidunt, sint atque aperiam.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-row">
+                                                    <img src="../images/dija.jpg" alt="image" class="rounded-circle conversation-avatar" width="50" height="50">
+                                                    <div class="message">
+                                                        <!-- name of messenger -->
+                                                        <span class="name text-bold">Maris kike</span>&nbsp;
+                                                        <!-- message time -->
+                                                        <span class="text-grey">Nov, 9 | 12:45pm</span>
+
+                                                        <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod
+                                                            incidunt, sint atque aperiam.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-row">
+                                                    <img src="../images/dija.jpg" alt="image" class="rounded-circle conversation-avatar" width="50" height="50">
+                                                    <div class="message">
+                                                        <!-- name of messenger -->
+                                                        <span class="name text-bold">Maris kike</span>&nbsp;
+                                                        <!-- message time -->
+                                                        <span class="text-grey">Nov, 9 | 12:45pm</span>
+
+                                                        <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod
+                                                            incidunt, sint atque aperiam.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-row relative">
+                                                    <img src="../images/dija.jpg" alt="image" class="rounded-circle conversation-avatar" width="50" height="50">
+                                                    <div class="message">
+                                                        <!-- name of messenger -->
+                                                        <span class="name text-bold">Maris kike</span>&nbsp;
+                                                        <!-- message time -->
+                                                        <span class="text-grey">Nov, 9 | 12:45pm</span>
+
+                                                        <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod
+                                                            incidunt, sint atque aperiam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat-textarea">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <textarea name="message" id="message" rows="1" class="form-control" placeholder="write your message..."></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-info fr">send</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end chatting box  -->
+
+                                    <!-- chat info -->
+                                    <div class="col-3 bg-white" style="height: 400px;">
+                                        <div class="chat-info">
+                                            <h5>About</h5>
+                                            <!-- image | name | occupation type -->
+                                            <div class="text-center pt-4">
+                                                <img src="../images/dija.jpg" alt="avatar" width="100" height="100" class="circle img-responsive">
+                                                <p class="mt-2">
+                                                    <span class="text-bold"> Maris kike</span>
+                                                    <br>
+                                                    <span class="text-grey">neurosurgeon</span>
+                                                    <br>
+                                                    <span class="rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <!-- description -->
+                                            <div class="info-description">
+                                                <p>
+                                                    <span class="text-bold">Location:</span>&nbsp; Westingham, Konoha</p>
+                                                <p>
+                                                    <span class="text-bold">Language:</span>&nbsp; English</p>
+                                                <p>
+                                                    <span class="text-bold">Contact:</span>&nbsp; XX-xxx-xxxxx</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end message -->
+
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+
+            $('.search-icon-button').click(function () {
+                $('.type').toggle();
+                $('.search-form form').toggle();
+            });
+
+            $('.dropdown-toggle').dropdown();
+
+        });
+    </script>
+</body>
+
+</html>

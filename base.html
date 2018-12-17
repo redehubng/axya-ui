@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="app">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow ">
+            <div class="container">
+                <a class="navbar-brand brand-link" href="index.html">
+                   AXYA
+                </a>
+                <!-- button to toggle navigation on smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+        
+                    </ul>
+        
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item  ml-2">
+                            <a class="nav-link btn btn-outline-primary  btn-rounded nav-btn" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item  ml-2">
+                            <a class="nav-link btn btn-outline-primary btn-rounded nav-btn" href="register.html">Register</a>
+                        </li>
+
+                        <!-- navigation when user has logged in -->
+
+                        <!-- <li class="nav-item">
+                            <a id="navbarDropdown" class="nav-link {{auth()->user()->notifications->count() ? 'text-danger':'text-secondary'}}" role="button"
+                                v-pre href="{{ route('notifications.display', auth()->user()) }}" title="{{ auth()->user()->notifications->count() }} notifications">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                        </li> -->
+        
+                        <!-- <li class="nav-item dropdown">
+                            @include('layouts.partials.profile-dropdown')
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main style="margin-top:75px">
+            
+        </main>
+        
+        <!-- footer -->
+        <footer class="bg-primary p-5">
+            <div class="container">
+                <div class="footer-links">
+                    <ul class="nav">
+                        <li class="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="text-white">© 2018 AXYA. Trademarks and brands are the property AXYA.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

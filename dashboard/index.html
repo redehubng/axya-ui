@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+
+        
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#tableSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                        <ul class="collapse list-unstyled" id="tableSubmenu">
+                            <li>
+                                <a href="appointment_pending.html">pending</a>
+                            </li>
+                            <li>
+                                <a href="appointment_upcoming.html">upcoming</a>
+                            </li>
+                            <li>
+                                <a href="appointment_past.html">past</a>
+                            </li>
+                            
+                    
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                
+                    <a class="nav-link" href="message.html">
+                        <i class="fa fa-comment"></i>
+                        <span class="navlink-active">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#uiElementSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="uiElementSubmenu">
+                        <!-- include the <li></li> for the sub menu -->
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Notification</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="medication.html">
+                        <i class="fa fa-prescription"></i>
+                        <span class="navlink-active">Medication</span>
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+                
+                        <a class="navbar-brand" href="#">Dashboard</a>
+                
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+                
+                               
+                            </ul>
+                
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item relative">
+                                    <a href="#" class="nav-link text-info" id="notification-toggle">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                    <div class="notification-dropdown shadow rounded">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus! Veritatis dolorem illo voluptatum quisquam?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar">
+                                        Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+                
+                            </ul>
+                
+                
+                        </div>
+                    
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+            
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                        <!-- container for stat/ current info -->
+                        <div class="container mb-40">
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow " style="height: 286.3px;">
+                                        <!-- title -->
+                                        <div class="info-box-title">
+                                            <span class="title">current statistic</span>
+                                        </div>
+                                        <!-- end title -->
+
+                                        <div class="info-box-content">
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                          <p class="h4 main">27</p>
+                                                          <span>Upcoming Appointments</span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                          <span class="text-info"><i class="fa fa-user-md fa-4x"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <hr>
+                                                <div class="info">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                          <p class="h4 main">200</p>
+                                                          <span>Current Presceiption</span>
+                                                        </div>
+                                                        <div class="col-6">
+                                                          <span class="text-info"><i class="fa fa-prescription fa-4x"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow" style="height: 286.3px;">
+                                        <div class="info-box-title relative">
+                                            <span class="title ">Upcoming Appointements</<span>
+                                            <button class="btn btn-light ml-2 title-btn">see all</button>
+                                        </div>
+                                        <div class="info-box-content">
+                                                <div class="info UA mb-4">
+                                                    <div class="row relative">
+                                                        <div class="col-8 offset-1">
+                                                            
+                                                            <img src="../images/doc.jpg" alt="image" class="circle mt-2 absolute" width="30">
+                                                            <div class="info-description pl-3">
+                                                                <span class="main">Alaba Mustapha Olalekan</span>
+                                                                <span class="text-grey">pharmacologist</span>
+                                                                <span class="text-bold small">Nov 12, 2018</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="mt-2">
+                                                                <button class="btn btn-outline-danger btn-circle "><i class="fa fa-times"></i></button>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="info UA mb-4">
+                                                    <div class="row relative">
+                                                        <div class="col-8 offset-1">
+                                                            
+                                                            <img src="../images/doc.jpg" alt="image" class="circle mt-2 absolute" width="30">
+                                                            <div class="info-description pl-3">
+                                                                <span class="main">Alaba Mustapha Olalekan</span>
+                                                                <span class="text-grey">pharmacologist</span>
+                                                                <span class="text-bold small">Nov 12, 2018</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="mt-2">
+                                                                <button class="btn btn-outline-danger btn-circle "><i class="fa fa-times"></i></button>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="info UA">
+                                                    <div class="row relative">
+                                                        <div class="col-8 offset-1">
+                                                            
+                                                            <img src="../images/doc.jpg" alt="image" class="circle mt-2 absolute" width="30">
+                                                            <div class="info-description pl-3">
+                                                                <span class="main">Alaba Mustapha Olalekan</span>
+                                                                <span class="text-grey">pharmacologist</span>
+                                                                <span class="text-bold small">Nov 12, 2018</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <div class="mt-2">
+                                                                <button class="btn btn-outline-danger btn-circle "><i class="fa fa-times"></i></button>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                                
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow" style="height: 286.3px;">
+                                        <!-- title -->
+                                        <div class="info-box-title">
+                                            <span class="title">Current Prescription</span>
+                                        </div>
+                                        <!-- end title -->
+                                        
+                                        <div class="info-box-content">
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="icon-circle bg-info side-dot absolute"></span>
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="icon-circle bg-info side-dot absolute"></span>
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="icon-circle bg-info side-dot absolute"></span>
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="icon-circle bg-info side-dot absolute"></span>
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                
+                                               
+                                                
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- end container -->
+
+                        <!-- container for stat/ current info II -->
+                        <div class="container mb-40">
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow" style="height: 286.3px;">
+                                        <!-- title -->
+                                        <div class="info-box-title relative">
+                                            <span class="title ">Active Doctors</<span>
+                                            <button class="btn btn-light ml-2 title-btn">see all</button>
+                                        </div>
+                                        <!-- end title -->
+
+                                        <div class="info-box-content">
+                                                
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey">psychatrist</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey">psychatrist</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey">psychatrist</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey">psychatrist</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow" style="height: 286.3px;">
+                                        <div class="info-box-title relative">
+                                            <span class="title ">Notifications</<span>
+                                            <button class="btn btn-light ml-2 title-btn">see all</button>
+                                        </div>
+                                        <div class="info-box-content">
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey"><i class="fa fa-clock small"></i>5 hours ago</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey"><i class="fa fa-clock small"></i>7 hours ago</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey"><i class="fa fa-clock small"></i>1 day ago</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="info mb-3">
+                                                <div class="info-description relative pl-4">
+                                                    <span class="icon-circle bg-info side-dot absolute"></span>
+                                                    <span class="text-info side-dot absolute">
+                                                        <i class="fa fa-circle"></i>
+                                                    </span>
+                                                    <span class="main">Alaba Mustapha Olalekan</span>
+                                                    <span class="text-grey"><i class="fa fa-clock small"></i>2 days ago</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+                                <div class="col-md-4">
+
+                                    <!-- infoBox for statistics and current information of user -->
+                                    <div class="info-box rounded shadow" style="height: 286.3px;">
+                                        <!-- title -->
+                                        <div class="info-box-title">
+                                            <span class="title">Current Prescription</span>
+                                        </div>
+                                        <!-- end title -->
+                                        
+                                        <div class="info-box-content">
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                <div class="info mb-3">
+                                                        <div class="info-description relative pl-4">
+                                                            <span class="text-info side-dot absolute"><i class="fa fa-circle"></i></span>
+                                                            <span class="main">neurosurgery</span>
+                                                            <span class="text-grey">psychatrist</span>
+                                                            
+                                                        </div>
+                                                    
+                                                </div> 
+                                                
+                                               
+                                                
+                                        </div>
+                                    </div>
+                                    <!-- end infoBox -->
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- end container -->
+
+                      
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js" ></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+           
+           $('#notification-toggle').click(function(){
+                $('.notification-dropdown').toggle();
+
+           });
+
+                $(document).click(function(){
+                    if($('.notification-dropdown').css('display', 'block')){
+                       
+                   $('.notification-dropdown').hide(2000);
+                //    console.log($('.notification-dropdown').css('display'));
+                    }
+                });
+
+        });
+    </script>
+</body>
+
+</html>

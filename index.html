@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+   
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="app">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow ">
+            <div class="container">
+                <a class="navbar-brand brand-link" href="index.html">
+                   AXYA
+                </a>
+                <!-- button to toggle navigation on smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+        
+                    </ul>
+        
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item  ml-2">
+                            <a class="nav-link btn btn-outline-primary  btn-rounded nav-btn" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item  ml-2">
+                            <a class="nav-link btn btn-outline-primary btn-rounded nav-btn" href="register.html">Register</a>
+                        </li>
+
+                        <!-- navigation when user has logged in -->
+
+                        <!-- <li class="nav-item">
+                            <a id="navbarDropdown" class="nav-link {{auth()->user()->notifications->count() ? 'text-danger':'text-secondary'}}" role="button"
+                                v-pre href="{{ route('notifications.display', auth()->user()) }}" title="{{ auth()->user()->notifications->count() }} notifications">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                        </li> -->
+        
+                        <!-- <li class="nav-item dropdown">
+                            @include('layouts.partials.profile-dropdown')
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main site content goes here -->
+        <main style="margin-top:58px">
+
+            <!-- home header -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container text-center">
+                    <h1 class="display-4">Premium health care!</h1>
+                    <p class="lead">Search for doctors and book an appointment today.</p>
+                    <hr class="my-4">
+            
+            
+                </div>
+            </div>  
+              <!-- secondary contents  -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-primary">Featured doctor</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="images/doc.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Alaba Mustapha</a>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dentist&nbsp;(MBBS)</h6>
+                                <p class="card-text">Practice Years: 5</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                </small>&nbsp;5(34)
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/doc.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Alaba Mustapha olalekan</a>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dentist&nbsp;(MBBS)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                </small>&nbsp;5(34)
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/doc.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Alaba Mustapha olalekan</a>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dentist&nbsp;(MBBS)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                </small>&nbsp;5(34)
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/doc.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Alaba Mustapha olalekan</a>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dentist&nbsp;(MBBS)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                </small>&nbsp;5(34)
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/doc.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Alaba Mustapha olalekan</a>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Dentist&nbsp;(MBBS)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                    <span class="fa fa-star text-primary"></span>
+                                </small>&nbsp;5(34)
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="jumbotron jumbotron-fluid mt-5 mb-0 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="text-primary">Testimonials</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-responsive rounded-circle mx-auto d-block mb-2" src="images/doc.jpg" alt="" width="100">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="jumbotron jumbotron-fluid align-middle">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 mt-5">
+                            <h1 class="display-4">Download on store</h1>
+                            <p class="lead">Get connected with doctors straight from your phone.</p>
+                            <a href="#" class="btn btn-primary">Download now</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/phone.png" alt="phone" height="400">
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="bg-primary p-5">
+            <div class="container">
+                <div class="footer-links">
+                    <ul class="nav">
+                        <li class="nav-link"><a href="#">About</a></li>
+                        <li class="nav-link"><a href="#">FAQ</a></li>
+                        <li class="nav-link"><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="text-white">© 2018 AXYA. Trademarks and brands are the property AXYA.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

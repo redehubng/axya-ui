@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> user profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="app">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow ">
+            <div class="container">
+                <a class="navbar-brand brand-link" href="index.html">
+                   AXYA
+                </a>
+                <!-- button to toggle navigation on smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+        
+                    </ul>
+        
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <!-- navigation when user has logged in -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="circle" src="images/doc.jpg" width="25" alt="users avatar"> Alaba Mustapha
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="dashboard/index.html">Dashboard</a>
+                                <a class="dropdown-item" href="profile.html">My profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </li>
+
+
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main style="margin-top:75px">
+            
+            <div class="wrapper">
+                <div class="container">
+                    <div id="profile-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <section id="usercard">
+                                    <div class="usercard-component">
+                                        <div class="card user-card">
+                                            <div class="card-body">
+                                                <div class="profile-image">
+                                                    <img src="images/doc.jpg" alt="profile image" class="profile-img">
+                                                    <div class="edit-image text-center">
+                                                        <span  id="falseinput"> <i class="fa fa-camera fa-2x"></i></span>
+                                                       
+     
+                                                     </div>
+                                                     <form>
+                                                         <input type="file" name="image-upload" id="image-upload">
+                                                     </form>
+                                                </div>
+                                                <div class="user-profile-label">
+                                                    <p>Alaba Mustapha</p>
+                                                </div>
+                                                <hr>
+                                                <div class="user-stats-desc">
+                                                    <div class="user-stats">
+                                                        <ul class="nav flex-column">
+                                                            <!-- list -->
+                                                            <li class="nav-item ">
+                                                                
+                                                                Contact: 
+                                                                <strong>XX - XXXX - XXXXX</strong>
+        
+                                                            </li>
+                                                            <li class="nav-item ">
+                                                                
+                                                                Age:
+                                                                <strong>50</strong>
+                                                                   
+                                                            </li>
+                                                            
+                                                        </ul>
+     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </section>
+                            </div>
+                            <div class="col-md-8">
+                                <section id="userinfo">
+                                    <div class="user-info">
+                                        <ul class="nav nav-tabs info-bar" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="medical-info" data-toggle="tab" href="#med-info" role="tab" aria-controls="home" aria-selected="true">MEDICAL INFO </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="profile" aria-selected="false">PAYMENT INFO</a>
+                                            </li>
+                                            
+                                        </ul>
+
+                                        <div class="tab-content info-content">
+                                            <div class="tab-pane active " id="med-info" role="tabpanel" aria-labelledby="medical-info">
+                                                <div class="top-row">
+                                                    <div class="widget-box bg-primary inline-block mr-4">
+                                                        <div class="measurement">
+                                                            <span><i class="fa fa-weight fa-3x"></i> Weight</span>
+                                                        </div>
+                                                        <div class="measurement-val text-center">
+                                                            <span>75</span>
+                                                            <small>kg</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-box bg-green inline-block">
+                                                        <div class="measurement">
+                                                            <span><i class="fa fa-ruler fa-3x"></i> Height</span>
+                                                        </div>
+                                                        <div class="measurement-val text-center">
+                                                            <span>178</span>
+                                                            <small>cm</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view-button inline-block p-4 mb-4">
+                                                        <button class="btn btn-primary btn-lg"><i class="fa fa-eye"></i>&nbsp;view medical history</button>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="med-info-x">
+                                                    <div class="med-info">
+                                                        <span class="title">Treatments&nbsp; <i class="fa fa-diagnoses"></i></span>
+
+                                                        <span class="detail"> Lorem ipsum .</span>
+                                                        <span class="detail"> ipsum omnis .</span>
+                                                        <span class="detail"> omnis obcaecati .</span>
+                                                        <span class="detail"> nostrum nobis.</span>
+                                                        <span class="detail"> nostrum obcaecati nobis.</span>
+                                                    </div>
+                                                    <div class="med-info">
+                                                        <span class="title">Prescription&nbsp; <i class="fa fa-prescription-bottle-alt"></i></span>
+
+                                                        <span class="detail"> Lorem ipsum .</span>
+                                                        <span class="detail"> ipsum omnis .</span>
+                                                        <span class="detail"> omnis obcaecati .</span>
+                                                        <span class="detail"> nostrum nobis.</span>
+                                                        <span class="detail"> nostrum obcaecati nobis.</span>
+                                                    </div>
+                                                    <div class="med-info">
+                                                        <span class="title">Allergies&nbsp; <i class="fa fa-dharmachakra"></i></span>
+
+                                                        <span class="detail"> Lorem ipsum .</span>
+                                                        <span class="detail"> ipsum omnis .</span>
+                                                        <span class="detail"> omnis obcaecati .</span>
+                                                        <span class="detail"> nostrum nobis.</span>
+                                                        <span class="detail"> nostrum obcaecati nobis.</span>
+                                                    </div>
+                                                    <div class="med-info">
+                                                        <span class="title">Chronic Condition&nbsp;
+                                                            <i class="fa fa-syringe"></i>
+                                                        </span>
+                                                    
+                                                        <span class="detail"> Lorem ipsum .</span>
+                                                        <span class="detail"> ipsum omnis .</span>
+                                                        <span class="detail"> omnis obcaecati .</span>
+                                                        <span class="detail"> nostrum nobis.</span>
+                                                        <span class="detail"> nostrum obcaecati nobis.</span>
+                                                    </div>
+                                                    <div class="med-info">
+                                                        <span class="title">Medical Test&nbsp; <i class="fa fa-file-prescription"></i></span>
+
+                                                        <span class="detail"> Lorem ipsum .</span>
+                                                        <span class="detail"> ipsum omnis .</span>
+                                                        <span class="detail"> omnis obcaecati .</span>
+                                                        <span class="detail"> nostrum nobis.</span>
+                                                        <span class="detail"> nostrum obcaecati nobis.</span>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                
+                                               
+                                            </div>
+                                            <div class="tab-pane" id="payment" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- footer -->
+        <footer class="bg-primary p-5">
+            <div class="container">
+                <div class="footer-links">
+                    <ul class="nav">
+                        <li class="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="text-white">© 2018 AXYA. Trademarks and brands are the property AXYA.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#falseinput').click(function () {
+                $("#image-upload").click();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> user profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div id="app">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow ">
+            <div class="container">
+                <a class="navbar-brand brand-link" href="index.html">
+                   AXYA
+                </a>
+                <!-- button to toggle navigation on smaller screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+        
+                    </ul>
+        
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <!-- navigation when user has logged in -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="circle" src="images/doc-w.png" width="25" alt="users avatar"> Meena Reina
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="dashboard/index.html">Dashboard</a>
+                                <a class="dropdown-item" href="profile.html">My profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </li>
+
+
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main style="margin-top:75px">
+            
+            <div class="wrapper">
+                <div class="container">
+                    <!-- profile information -->
+                    <section id="profile-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- information card about user -->
+                                <section id="usercard">
+                                    <div class="usercard-component">
+                                        <div class="card user-card">
+                                            <div class="card-body">
+                                                <div class="profile-image">
+                                                    <img src="images/doc-w.png" alt="profile image" class="profile-img">
+                                                    <div class="edit-image text-center">
+                                                        <span  id="falseinput"> <i class="fa fa-camera fa-2x"></i></span>
+                                                       
+     
+                                                     </div>
+                                                     <form>
+                                                         <input type="file" name="image-upload" id="image-upload">
+                                                     </form>
+                                                </div>
+                                                <div class="user-profile-label">
+                                                    <p class="name">Neema Reina</p>
+                                                    <span class="specialty">Gynaecologist, <small>12 yrs experience</small></span>
+                                                    <span class="specialty small">Msc. Anatomy</span>
+                                                    <div class="text-center">
+                                                        <span class="available">available</span>
+
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="user-stats-desc">
+                                                    <div class="user-stats">
+                                                        <ul class="nav flex-column">
+                                                            <!-- list -->
+                                                            <li class="nav-item ">
+                                                                
+                                                                Language: 
+                                                                <strong>English</strong>
+        
+                                                            </li>
+                                                            <li class="nav-item ">
+                                                                
+                                                                Contact: 
+                                                                <strong>XX - XXXX - XXXXX</strong>
+        
+                                                            </li>
+                                                            <li class="nav-item ">
+                                                                
+                                                                Location:
+                                                                <strong>23 Av, ilinois, USA</strong>
+                                                                   
+                                                            </li>
+                                                            <li class="nav-item ">
+                                                                
+                                                                Patient Served:
+                                                                <strong>25</strong>
+                                                                   
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                        <div class="rating text-center">
+                                                            <span>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                                                                              
+                                                            </span>
+                                                        </div>
+     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </section>
+                            </div>
+                            <div class="col-md-8">
+                                <section id="userinfo">
+                                    <div class="user-info">
+                                        <ul class="nav nav-tabs info-bar" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="medical-info" data-toggle="tab" href="#med-info" role="tab" aria-controls="home" aria-selected="true">PROFESSIONAL INFO </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="available-hour" data-toggle="tab" href="#available" role="tab" aria-controls="profile" aria-selected="false">AVAILABLE HOURS</a>
+                                            </li>
+                                            
+                                        </ul>
+
+                                        <div class="tab-content info-content">
+                                            <div class="tab-pane active " id="med-info" role="tabpanel" aria-labelledby="medical-info">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="widget-box bg-white shadow mr-4">
+                                                            <div class="widget-title text-primary">
+                                                                <span>
+                                                                    <i class="fa fa-notes-medical fa-3x"></i> Specialty</span>
+                                                            </div>
+                                                        
+                                                            <div class="widget-content text-center pt-4 mt-4">
+                                                                <span class="text-bold lead">Gynaecologist</span>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="widget-box bg-white shadow ">
+                                                            <div class="widget-title text-primary ">
+                                                                <span>
+                                                                    <i class="fa fa-graduation-cap fa-3x"></i> Education</span>
+                                                            </div>
+                                                            <div class="widget-content text-center pt-4 mt-4">
+                                                                <p class="text-bold lead">Havard University</p>
+                                                                <span class="text-grey"> MSc. Anatomy</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="card shadow mb-4" style="width: 14rem;">
+                                                            <img class="card-img-top" src="images/med-cert.jpg" alt="Medical Cerificate">
+                                                            <div class="card-body">
+                                                                <p class="card-text text-center text-bold">Proof of Certification</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card  shadow" style="width: 14rem;">
+                                                            <img class="card-img-top" src="images/med-cert.jpg" alt="Medical License">
+                                                            <div class="card-body">
+                                                                <p class="card-text text-center text-bold">Medical License</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                                                 
+                                                   
+
+                                                </div> 
+                                            </div>
+                                            <div class="tab-pane" id="available" role="tabpanel" aria-labelledby="available-hour">
+                                               <div class="row">
+                                                   <div class="col-md-4">
+                                                        <div class="widget-box bg-white shadow mr-4">
+                                                            <div class="widget-title text-primary">
+                                                                <span>
+                                                                    <i class="fa fa-calendar-check fa-3x"></i> cost/appointment</span>
+                                                            </div>
+                                                        
+                                                            <div class="widget-content text-center pt-4 mt-4">
+                                                                <span class="text-bold text-lg"><i class="fa fa-dollar-sign"></i>50</span>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                   </div>
+                                                   <div class="offset-md-4 col-md-4">
+                                                        <div class="widget-box bg-white shadow mr-4">
+                                                            <div class="widget-title text-primary">
+                                                                <span>
+                                                                    <i class="fa fa-calendar-check fa-3x"></i> Approximate Time</span>
+                                                            </div>
+                                                        
+                                                            <div class="widget-content text-center pt-4 mt-4">
+                                                                <span class="text-bold text-lg">180</span><small>mins</small>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                   </div>
+                                               </div>
+
+                                               <div class="appointment border mt-4">
+                                                   <p class="lead text-center"> Available Hours</p>
+
+                                                <table class="table mt-2">
+                                                    <thead>
+                                                        <tr>
+                                                           
+                                                            <th scope="col">Day</th>
+                                                            <th scope="col">period</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Monday</th>
+                                                            <td>11:00am - 3:00pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Wednesday</th>
+                                                            <td>11:00am - 3:00pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Friday</th>
+                                                            <td>11:00am - 3:00pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Saturday</th>
+                                                            <td>11:00am - 3:00pm</td>
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- doctors review -->
+                    <section id="review">
+                        <div class="row">
+                            <div class="col-8 offset-4">
+                                <div class="review-container">
+                                    <div class="review-header">
+                                        <p class="h3">Dr. Meena Reina's Review</p>
+                                        <div class="rating">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                        
+                                            </span>
+                                        </div>
+                                        <span class="text-bold">5.0 rating</span><br>
+                                        <span class="small">10 reviews</span>
+
+                                        <div class="review-form">
+                                            <button class="btn btn-lg btn-primary review-btn">Leave a Review</button>
+                                        </div>
+                                    </div>
+                                    <div class="review-body">
+                                        <div class="p-review">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    
+                                                        <p class="h4">Patient's Review</p>
+                                                    
+                                                </div>
+                                                <div class="col-sm-4">
+
+                                                    <form action="">
+                                                        <div class="col-auto my-1">
+                                                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Sort review by</option>
+                                                                <option value="1">Most recent</option>
+                                                                <option value="2">Positive review</option>
+                                                                <option value="3">Negative review</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews">
+                                            <div class="review">
+                                                <img src="images/patient-w.jpg" alt="reviewers image" class="circle img-responsive" width="60" height="60">
+                                                <div class="meta">
+                                                    <span class="name">Janet Smith</span>
+                                                    <span class="date">Nov 17, 2018</span>
+                                                    <div class="rating">
+                                                        <span class="small">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="text-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa exercitationem ullam provident quia. Animi odio commodi minima facere voluptate ipsam. Earum eveniet qui, voluptatem vitae fugit beatae atque? Ipsam.
+                                                        libero officia blanditiis, ad earum est vero itaque cupiditate aspernatur. Soluta ut reiciendis quas sint.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="review">
+                                                <img src="images/doc.jpg" alt="reviewers image" class="circle img-responsive" width="60" height="60">
+                                                <div class="meta">
+                                                    <span class="name">Janet Smith</span>
+                                                    <span class="date">Nov 17, 2018</span>
+                                                    <div class="rating">
+                                                        <span class="small">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="text-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa exercitationem ullam provident quia. Animi odio commodi minima facere voluptate ipsam. Earum eveniet qui, voluptatem vitae fugit beatae atque? Ipsam.
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        
+        <!-- footer -->
+        <footer class="bg-primary p-5">
+            <div class="container">
+                <div class="footer-links">
+                    <ul class="nav">
+                        <li class="nav-link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p class="text-white">© 2018 AXYA. Trademarks and brands are the property AXYA.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#falseinput').click(function () {
+                $("#image-upload").click();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

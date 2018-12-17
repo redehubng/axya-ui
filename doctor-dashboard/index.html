@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#appointmentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="appointmentSubmenu">
+                        <li>
+                            <a href="appointment_pending.html">pending</a>
+                        </li>
+                        <li>
+                            <a href="appointment_upcoming.html">upcoming</a>
+                        </li>
+                        <li>
+                            <a href="appointment_past.html">past</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="message.html">
+                        <i class="fa fa-comment"></i>
+                        <span class="navlink-active">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medication.html">
+                        <i class="fa fa-prescription"></i>
+                        <span class="navlink-active">Medication</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patients.html">
+                        <i class="fa fa-procedures"></i>
+                        <span class="navlink-active">Patients</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="paymentSubmenu">
+                        <li>
+                            <a href="payment-received.html">payment received</a>
+                        </li>
+                        <li>
+                            <a href="sub-payment.html">subscription payment</a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">earnings</a>
+                        </li>
+                    
+                    
+                    </ul>
+                   
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Notification</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fa fa-clipboard-list"></i>
+                        <span class="navlink-active">Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="subscription.html">
+                        <i class="fa fa-credit-card"></i>
+                        <span class="navlink-active">subscription</span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+        <section id="notification-sidebar" class="relative">
+            <div id="n-sidebar" class="notification-slide">
+                <div id="notification-close" class="close-btn">
+                    <div class="crossbar1"></div>
+                    <div class="crossbar2"></div>
+                </div>
+                <div class="notification-title">
+                    <p>today's notification</p>
+                    <div class="line-before"></div>
+                    <div class="line-after"></div>
+                </div>
+                <div class="notification-content">
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2"><i class="fa fa-calendar-check fa-2x"></i></div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">New appointment request</span><br>
+                                    <span>you have been sent a request for an appointement</span>
+                                    <span><a href="#" class="text-bold">By Nicki Smith</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2"><i class="fa fa-envelope fa-2x"></i></div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">New Message</span><br>
+                                    <span>I want to know if i can get my medical...</span>
+                                    <span><a href="#" class="text-bold">By Nicki Smith</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2"><i class="fa fa-clock fa-2x"></i></div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">Upcoming Appointment</span><br>
+                                    <span>issue: Malaria by 10:00am</span>
+                                    <span><a href="#" class="text-bold">for Troy Sheyman</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+
+                        <a class="navbar-brand" href="#">Dashboard</a>
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item relative">
+                                    <a href="#" class="nav-link text-info" id="notification-toggle">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                    <div class="notification-dropdown shadow rounded">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat
+                                                consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus!
+                                                Veritatis dolorem illo voluptatum quisquam?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar"> Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                        <!-- container for stat/ current info -->
+                        <div class="container mb-40">
+                            <!-- message -->
+                            <p class="h4">Overview</p>
+                            <!-- start row -->
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    <div class="widget bg-theme shadow ">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1>200</h1>
+                                                <span>appointments</span>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <i class="fa fa-calendar-check fa-5x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget bg-theme shadow ">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1>17</h1>
+                                                <span>Patient's served</span>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <i class="fa fa-procedures fa-5x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="widget bg-theme shadow ">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1>$3,200</h1>
+                                                <span>Total Payment</span>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <i class="fa fa-hand-holding-usd fa-5x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- end row -->
+
+                            <!-- start row -->
+                            <div class="row mt-40">
+                                <div class="col-md-6">
+                                    <div class="info-box rounded shadow">
+                                        <div class="info-box-title">
+                                            <p class="h4">Next Schedule</p>
+                                        </div>
+                                        <div class="info-box-content bg-white text-center">
+                                            <p class="h2">Cordelia Ruecker</p>
+                                            <div class="mb-3">
+                                                <img src="../images/doc-w.png" alt="patient image"  width="100" height="100"  class="img-responsive circle border">
+                                            </div>
+                                            <p><i class="fa fa-calendar-check"></i>&nbsp; Mon, 5 july | <i class="fa fa-clock"></i>&nbsp;10:00am</p>
+                                            <p class="font-weight-bold"> issue:&nbsp;Red Fever</p>
+                                            <div class="text-center">
+                                                <a href="#" class="btn btn-md bg-theme shadow-sm">Send message</a>
+                                                <a href="#" class="btn btn-md bg-theme shadow-sm">view profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-box rounded shadow">
+                                        <div class="info-box-title">
+                                            <p class="h4">New Appointment Request</p>
+                                        </div>
+                                        <div class="info-box-content bg-white text-center">
+                                            <p class="h2">Nicki Smith</p>
+                                            <div class="mb-3">
+                                                <img src="../images/a4.jpg" alt="patient image" width="100" height="100" class="img-responsive circle border">
+                                            </div>
+                                            <p>
+                                                <i class="fa fa-calendar-check"></i>&nbsp; Wed, 7 july |
+                                                <i class="fa fa-clock"></i>&nbsp;11:00am
+                                            </p>
+                                            <p class="font-weight-bold"> issue:&nbsp;Malaria</p>
+                                            <div class="text-center">
+                                                <a href="#" class="btn btn-md bg-theme shadow-sm">Accept request</a>
+                                                <a href="#" class="btn btn-md btn-danger shadow-sm">cancel request</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                            <!-- START ROW -->
+                            <div class="row mt-40">
+                                <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+                            
+                                    <div id="accordion" class="shadow">
+                                        <div class="card">
+                                            <div class="card-header bg-white" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                
+                                                <a class="card-title h4">
+                                                    My patient's List
+                                                </a>
+                            
+                                            </div>
+                            
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">#</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Issue</th>
+                                                                    <th scope="col">Status</th>
+                                                                    <th scope="col">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>Cordelia Ruecker</td>
+                                                                    <td>25 March, 2018</td>
+                                                                    <td>Pneumonoultramicroscopicsilicovolcanoconiosis</td>
+                                                                    <td><span class="badge badge-success">in attendance</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>Eden Meadows</td>
+                                                                    <td>29 March, 2018</td>
+                                                                    <td>Malaria</td>
+                                                                    <td><span class="badge badge-success">in attendance</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">3</th>
+                                                                    <td>Emelia Vincent</td>
+                                                                    <td>1 April, 2018</td>
+                                                                    <td>Typhoid</td>
+                                                                    <td><span class="badge badge-secondary">done</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">4</th>
+                                                                    <td>Salvador Savage</td>
+                                                                    <td>5 May, 2018</td>
+                                                                    <td>Typhoid</td>
+                                                                    <td><span class="badge badge-secondary">done</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">5</th>
+                                                                    <td>Tyrese Beard</td>
+                                                                    <td>9 May, 2018</td>
+                                                                    <td>NeuroMuscular disabilities</td>
+                                                                    <td><span class="badge badge-success">in attendance</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">6</th>
+                                                                    <td>Johanna Fischer</td>
+                                                                    <td>20 May, 2018</td>
+                                                                    <td>BiPolar Disorder</td>
+                                                                    <td><span class="badge badge-success">in attendance</span></td>
+                                                                    <td>
+                                                                        <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                            <button type="button" class="btn btn-light ">view</button>
+                                                                            <button type="button" class="btn btn-danger ">delete</button>
+                                                                            <button type="button" class="btn btn-theme ">edit</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                              
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <div class="search-form w-100">
+
+                                                                <div class="form-group form-group-lg">
+                                                                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6"></div>
+                                                        <div class="col-lg-2">
+                                                            <nav aria-label="default-pagination">
+                                                                <ul class="pagination pagination-sm">
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#">← </a>
+                                                                    </li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#">1</a>
+                                                                    </li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#">2</a>
+                                                                    </li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#">3</a>
+                                                                    </li>
+                                                                    <li class="page-item">
+                                                                        <a class="page-link" href="#">→</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                            
+                            
+                                </div>
+                            </div>
+                            <!-- END ROW -->
+                        </div>
+                        <!-- end container -->
+
+                       
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+           $( "#notification-toggle" ).click(function() {
+                $( ".notification-slide" ).animate({
+                    opacity: 1,
+                    width: "300",
+                   
+                    }, 500);
+            });
+
+            $("#notification-close").click(function () {
+                $(".notification-slide").animate({
+                    opacity: 0,
+                    width: "0",
+                 
+                }, 400);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

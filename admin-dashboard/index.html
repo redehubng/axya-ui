@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="../css/dashboard/plugins/datatables.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar" >
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="patients.html">
+                        <i class="fa fa-user"></i>
+                        <span class="navlink-active">Patients Management</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="patients.html">
+                        <i class="fa fa-user-md"></i>
+                        <span class="navlink-active">Doctors Management</span>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#appointmentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="appointmentSubmenu">
+                        <li>
+                            <a href="appointment_request.html">requested</a>
+                        </li>
+                        <li>
+                            <a href="appointment_upcoming.html">upcoming</a>
+                        </li>
+                        <li>
+                            <a href="appointment_past.html">past</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                
+                    <a class="nav-link" href="subscription.html">
+                        <i class="fa fa-credit-card"></i>
+                        <span class="navlink-active">subscription</span>
+                    </a>
+                </li>
+
+            
+                <li class="nav-item">
+                    <a class="nav-link active" href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="paymentSubmenu">
+                        <li>
+                            <a href="payment-received.html">payment received</a>
+                        </li>
+                        <li>
+                            <a href="sub-payment.html">subscription payment</a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">earnings</a>
+                        </li>
+
+
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Push Notification</span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+        <section id="notification-sidebar" class="relative">
+            <div id="n-sidebar" class="notification-slide">
+                <div id="notification-close" class="close-btn">
+                    <div class="crossbar1"></div>
+                    <div class="crossbar2"></div>
+                </div>
+                <div class="notification-title">
+                    <p>today's notification</p>
+                    <div class="line-before"></div>
+                    <div class="line-after"></div>
+                </div>
+                <div class="notification-content">
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2">
+                                <i class="fa fa-calendar-check fa-2x"></i>
+                            </div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">New appointment request</span>
+                                    <br>
+                                    <span>you have been sent a request for an appointement</span>
+                                    <span>
+                                        <a href="#" class="text-bold">By Nicki Smith</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">New Message</span>
+                                    <br>
+                                    <span>I want to know if i can get my medical...</span>
+                                    <span>
+                                        <a href="#" class="text-bold">By Nicki Smith</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="row">
+                            <div class="col-2 text-right pt-2">
+                                <i class="fa fa-clock fa-2x"></i>
+                            </div>
+                            <div class="col-10">
+                                <div class="message">
+
+                                    <span class="text-bold">Upcoming Appointment</span>
+                                    <br>
+                                    <span>issue: Malaria by 10:00am</span>
+                                    <span>
+                                        <a href="#" class="text-bold">for Troy Sheyman</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+
+                        <a class="navbar-brand" href="#">Dashboard</a>
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item relative">
+                                    <a href="#" class="nav-link text-info" id="notification-toggle">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                    <div class="notification-dropdown shadow rounded">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat
+                                                consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus!
+                                                Veritatis dolorem illo voluptatum quisquam?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar"> Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item " aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                        <!-- container for stat/ current info -->
+                        <div class="container mb-40">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="info-box shadow-sm">
+                                        <div class="info-box-title clearfix">
+                                            <span class="lead text-uppercase">total patients</span>
+                                            <div class="float-right text-theme">
+                                                <i class="fa fa-procedures fa-2x"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info-box-content pb-2">
+                                            <p class="h1 m-0">200</p>
+                                            <div class="percentage float-right text-primary">
+                                                40%
+                                                <i class="fa fa-level-up-alt"></i>
+                                            </div>
+                                            <span>patients</span>
+                                            
+                                        </div>
+                                        <div class="info-box-footer clearfix">
+                                            <span class="small text-success">active <i class="fa fa-circle"></i>&nbsp; 70%</span>
+                                            <span class="small text-secondary float-right">in-active <i class="fa fa-circle"></i>&nbsp; 30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="info-box shadow-sm">
+                                        <div class="info-box-title clearfix">
+                                            <span class="lead text-uppercase">total doctors</span>
+                                            <div class="float-right text-theme">
+                                                <i class="fa fa-user-md fa-2x"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info-box-content pb-2">
+                                            <p class="h1 m-0">176</p>
+                                            <div class="percentage float-right text-danger">
+                                                60%
+                                                <i class="fa fa-level-down-alt"></i>
+                                            </div>
+                                            <span>doctors</span>
+                                            
+                                        </div>
+                                        <div class="info-box-footer">
+                                            <span class="small text-success">active <i class="fa fa-circle"></i>&nbsp; 80%</span>
+                                            <span class="small text-secondary float-right">in-active <i class="fa fa-circle"></i>&nbsp; 20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="info-box shadow-sm">
+                                        <div class="info-box-title clearfix">
+                                            <span class="lead text-uppercase">appoitments</span>
+                                            <div class="float-right text-theme">
+                                                <i class="fa fa-calendar-check fa-2x"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info-box-content pb-2">
+                                            <p class="h1 m-0">80</p>
+                                            <div class="percentage float-right text-info">
+                                                50%
+                                                <i class="fa fa-level-up-alt"></i>
+                                            </div>
+                                            <span>total appointments</span>
+                                            
+                                        </div>
+                                        <div class="info-box-footer">
+                                            <span class="small text-success">completed <i class="fa fa-circle"></i>&nbsp; 50%</span>
+                                            <span class="small text-secondary float-right">uncompleted <i class="fa fa-circle"></i>&nbsp; 50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="info-box shadow-sm">
+                                        <div class="info-box-title clearfix">
+                                            <span class="lead text-uppercase">total income</span>
+                                            <div class="float-right text-theme">
+                                                <i class="fa fa-dollar-sign fa-2x"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info-box-content pb-2">
+                                            <p class="h1 m-0">$3200</p>
+                                            <div class="percentage float-right text-warning">
+                                                60%
+                                                <i class="fa fa-bolt"></i>
+                                            </div>
+                                            <span>income</span>
+                                            
+                                        </div>
+                                        <div class="info-box-footer">
+                                            <span class="badge badge-info small">total income | november</span>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <!-- START ROW -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="info-box bg-white shadow-sm">
+                                        <div class="info-box-title">
+                                            <span class="lead text-uppercase">revenue</span>
+                                        </div>
+                                        <div class="info-box-content">
+                                            <div class="row">
+                                                <div class="col-9"><canvas id="myChart" height="100"></canvas></div>
+                                                <div class="col-3">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ex id ipsum quaerat! Voluptatum explicabo inventore voluptas sit id iure facilis, assumenda beatae, unde odio obcaecati. Asperiores assumenda explicabo optio!
+                                                    <p class="f-s-20">INFO  ABOUT GRAPH AND OTHER STUFFS</p>
+                                                </div>
+                                            </div>
+                                       
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <!-- END ROW -->
+
+
+                            <!-- START ROW -->
+                            <div class="row mt-40">
+                                <div class="col-lg-12">
+                                    <div class="box">
+                                        <div class="box-title">
+                                            <h5>user's list</h5>
+                                        </div>
+                                        <div class="box-content">
+                            
+                                          
+                            
+                                            <div class="table-responsive">
+                                                <table id="users" class="table table-striped table-hover" cellspacing="0" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Start date</th>
+                                                            <th>role</th>
+                                                            <th>status</th>
+                                                            <th>Action</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Start date</th>
+                                                            <th>role</th>
+                                                            <th>status</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>23 March, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td><span class="badge badge-info">active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angelica Ramos</td>
+                                                            <td>23 March, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td><span class="badge badge-info">active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton Cox</td>
+                                                            <td>1 March, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td><span class="badge badge-secondary">in-active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bradley Greer</td>
+                                                            <td>3 April, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td><span class="badge badge-secondary">in-active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bradley Achipon</td>
+                                                            <td>3 july, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td><span class="badge badge-info">active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                        <tr>
+                                                            <td>Caesar Vance</td>
+                                                            <td>3 july, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td><span class="badge badge-info">active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Carol danvers</td>
+                                                            <td>5 july, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td><span class="badge badge-info">active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                        <tr>
+                                                            <td>Dai Rios</td>
+                                                            <td>5 july, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td><span class="badge badge-secondary">in-active</span></td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Caesar Vance</td>
+                                                            <td>3 july, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td>
+                                                                <span class="badge badge-secondary">in-active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Carol danvers</td>
+                                                            <td>5 july, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td>
+                                                                <span class="badge badge-secondary">in-active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Angelica Ramos</td>
+                                                            <td>23 March, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td>
+                                                                <span class="badge badge-info">active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton Cox</td>
+                                                            <td>1 March, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td>
+                                                                <span class="badge badge-secondary">in-active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bradley Greer</td>
+                                                            <td>3 April, 2017</td>
+                                                            <td>Doctor</td>
+                                                            <td>
+                                                                <span class="badge badge-secondary">in-active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bradley Achipon</td>
+                                                            <td>3 july, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td>
+                                                                <span class="badge badge-info">active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <td>Caesar Vance</td>
+                                                            <td>3 july, 2017</td>
+                                                            <td>Patient</td>
+                                                            <td>
+                                                                <span class="badge badge-info">active</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-group btn-group-sm border rounded shadow-sm" role="group" aria-label="Basic example">
+                                                                    <button type="button" class="btn btn-light ">view</button>
+                                                                    <button type="button" class="btn btn-danger ">delete</button>
+                                                        
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                            
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <!-- END ROW -->
+                        
+                        </div>
+                        <!-- end container -->
+
+
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dashboard/plugins/datatables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+            $("#notification-toggle").click(function () {
+                $(".notification-slide").animate({
+                    opacity: 1,
+                    width: "300",
+
+                }, 500);
+            });
+
+            $("#notification-close").click(function () {
+                $(".notification-slide").animate({
+                    opacity: 0,
+                    width: "0",
+
+                }, 400);
+            });
+
+        });
+    </script>
+
+    <!-- chart js script -->
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July","August", "September", "October","November", "December"],
+                datasets: [{
+                    label: "Revenue for the year",
+                    backgroundColor: 'rgba(26,179,148,0.5)',
+                    borderColor: "rgba(26,179,148,0.7)",
+                    pointBackgroundColor: "rgba(26,179,148,1)",
+                    pointBorderColor: "#fff",
+                    data: [28, 48, 40, 19, 86, 27, 90, 45, 56, 76,89, 21]
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+    <!-- datatable script -->
+    <script>
+          $('#users').DataTable();
+    </script>
+</body>
+
+</html>

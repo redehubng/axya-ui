@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- fontawesome  CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- other CSS -->
+    <link rel="stylesheet" href="../css/dashboard/styles.css">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <title>Axya | dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>AXYA</h3>
+                <strong>AX</strong>
+            </div>
+
+            <!-- Sidebar Avatar -->
+            <!-- <div class="sidebar-avatar">
+                <div class="avatar-image">
+                    <img src="../images/doc.jpg" alt="avatar" class="circle" width="60px">
+                </div>
+                <div class="avatar-name">
+                    <span class="">welcome</span>
+                    <span class="name">Alaba Mustapha</span>
+                </div>
+            </div> -->
+
+            <ul class="nav flex-sm-column">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        <span class="navlink-active">Dashboard</span>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#appointmentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-tasks"></i>
+                        <span class="navlink-active">Appointments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="appointmentSubmenu">
+                        <li>
+                            <a href="appointment_pending.html">pending</a>
+                        </li>
+                        <li>
+                            <a href="appointment_upcoming.html">upcoming</a>
+                        </li>
+                        <li>
+                            <a href="appointment_past.html">past</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="message.html">
+                        <i class="fa fa-comment"></i>
+                        <span class="navlink-active">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="medication.html">
+                        <i class="fa fa-prescription"></i>
+                        <span class="navlink-active">Medication</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patients.html">
+                        <i class="fa fa-procedures"></i>
+                        <span class="navlink-active">Patients</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#paymentSubmenu" data-toggle="collapse" aria-expanded="false">
+                        <i class="fa fa-money-bill-alt"></i>
+                        <span class="navlink-active">Payments</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="paymentSubmenu">
+                        <li>
+                            <a href="payment-received.html">payment received</a>
+                        </li>
+                        <li>
+                            <a href="sub-payment.html">subscription payment</a>
+                        </li>
+                        <li>
+                            <a href="earnings.html">earnings</a>
+                        </li>
+                    
+                    
+                    </ul>
+                   
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="notification.html">
+                        <i class="fa fa-bell"></i>
+                        <span class="navlink-active">Notification</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fa fa-clipboard-list"></i>
+                        <span class="navlink-active">Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="subscription.html">
+                        <i class="fa fa-credit-card"></i>
+                        <span class="navlink-active">subscription</span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+        <section id="content">
+
+            <div id="content-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="fa fa-align-left"></i>
+                            <!-- Shrink Sidebar -->
+                        </button>
+
+                        <a class="navbar-brand" href="#">Dashboard</a>
+
+                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5">
+                                <li class="nav-item relative">
+                                    <a href="#" class="nav-link text-info" id="notification-toggle">
+                                        <i class="fa fa-bell fa-2x"></i>
+                                        <span class="badge badge-light notification-count">4</span>
+                                    </a>
+                                    <div class="notification-dropdown shadow rounded">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni laboriosam, numquam dolorem possimus quia placeat
+                                                consectetur alias laudantium aliquam accusantium voluptatum porro fugit delectus!
+                                                Veritatis dolorem illo voluptatum quisquam?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="circle" src="../images/doc.jpg" width="25" alt="users avatar"> Alaba Mustapha
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="../profile.html">My profile</a>
+                                        <a class="dropdown-item" href="../settings.html">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- end container fluid -->
+            </div>
+            <!-- end content navbar -->
+            <nav aria-label="breadcrumb" class="arrow-separator">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="index.html">Home</a>
+                    </li>
+                   
+                    <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+                </ol>
+            </nav>
+            <!-- end breadcrumbs -->
+
+
+            <section class="main-content mt-40">
+                <div class="container-fluid">
+                    <div class="wrapper-content">
+                        <!-- container for stat/ current info -->
+                        <div class="container mb-40">
+                          
+
+                            <!-- START ROW -->
+                            <div class="row mt-40 ">
+                                <div class="col-md-9">
+                            
+                                   <div class="info-box relative">
+                                       <div class="info-box-title">
+                                           <p class="h3">Update Appointment Schedule</p>
+                                       </div>
+                                       <div class="info-box-content">
+                                        <form action="#" class="clearfix">
+                                            <div class="appointment border mt-4 shadow">
+                                                <p class="lead text-center"> Available Hours</p>
+                                        
+                                                <table class="table mt-2">
+                                                    <thead>
+                                                        <tr>
+                                        
+                                                            <th scope="col">Day</th>
+                                                            <th scope="col">From</th>
+                                                            <th scope="col">To</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Monday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Tuesday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Wednesday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Thursday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Friday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Saturday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Sunday</th>
+                                                            <td>
+                                                                <input type="time" name="from-time" id="from-time" value="8:00 AM">
+                                                            </td>
+                                                            <td>
+                                                                <input type="time" name="to-time" id="to-time" value="10:00 AM">
+                                                            </td>
+                                                        </tr>
+                                        
+                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="form-group row my-4">
+                                                <label for="schedule-length" class="col-sm-2 offset-sm-5 p-0 col-form-label col-form-label-lg">Continue for</label>
+                                                <div class="col-sm-4">
+                                                    <select name="schedule-length" id="schedule-length" class="form-control inline-block">
+                                                        <option value="7">Week</option>
+                                                        <option value="14">2 Weeks</option>
+                                                        <option value="30">Month</option>
+                                                        <option value="91">Quaterly(year)</option>
+                                                        <option value="182">Half(year)</option>
+                                                        <option value="365">Year</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        
+                                            <button type="submit" class="btn btn-lg btn-theme float-right">update schedule</button>
+                                        </form>
+                                       </div>
+
+                                        <div class="card bg-white mb-3 position-absolute schedule-card shadow" style="max-width: 18rem;">
+                                            <div class="card-header bg-white text-teal clearfix">
+                                               Current Schedule
+                                               <i class="fa fa-bolt fa-2x float-right"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table table-sm table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                
+                                                            <th scope="col">Day</th>
+                                                            <th scope="col">From</th>
+                                                            <th scope="col">To</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Monday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Monday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Tuesday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Wednesday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Thursday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Friday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Saturday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Sunday</th>
+                                                            <td>11:00AM</td>
+                                                            <td>1:00PM</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                   </div>
+                            
+                                </div>
+                              
+                                  
+                                
+                            </div>
+                            <!-- END ROW -->
+                        </div>
+                        <!-- end container -->
+
+                       
+
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- end main content -->
+
+            <div class="content-footer">
+                <div class="float-right">some text here</div>
+                <div>made with love form redehub</div>
+            </div>
+            <!-- end footer -->
+        </section>
+
+        <!-- end content -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <!-- Optional JavaScript -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+           
+
+        });
+    </script>
+</body>
+
+</html>
